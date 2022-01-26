@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dietas_App.View.HipocaloricaView"
+             BackgroundColor="#B29E81">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="FitApp" TextColor="#9BFE9B" FontSize="40" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                    <RowDefinition Height="20"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="Calories:" TextColor="White" FontSize="15" Grid.Row="0" Grid.Column="0" HorizontalTextAlignment="Start" FontAttributes="Italic"></Label>
+                <Label Text="Proteines:" TextColor="White" FontSize="15" Grid.Row="1" Grid.Column="0"  HorizontalTextAlignment="Start" FontAttributes="Italic" FontFamily=""></Label>
+                <Label Text="Idratos de carbono:" TextColor="White" FontSize="15" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Start" FontAttributes="Italic" FontFamily=""></Label>
+                <Label Text="Grasas:" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" Grid.Row="3" Grid.Column="0" FontAttributes="Italic" FontFamily=""></Label>
+                <Label Text="Calories" TextColor="White" FontSize="15" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Start" FontAttributes="Italic" ></Label>
+                <Label Text="Proteines" TextColor="White" FontSize="15" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Start" FontAttributes="Italic"  FontFamily="" ></Label>
+                <Label Text="Idratos de carbono" TextColor="White" FontSize="15" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Start" FontAttributes="Italic" FontFamily=""></Label>
+                <Label Text="Grasas" TextColor="White" FontSize="15" HorizontalTextAlignment="Start" Grid.Row="3" Grid.Column="1" FontAttributes="Italic" FontFamily="" ></Label>
+            </Grid>
+            <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Desayuno" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+                        
+                    <Button Text="+" Clicked="Añadirdesayuno"></Button>
+                        <StackLayout>
+                    <Label Text="Comida" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+                    <ListView x:Name="Comida">
+                            
+                        </ListView>
+                    <Button Text="+" Clicked="Añadircomida"></Button>
+                        </StackLayout>
+                        <Label Text="Merienda" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+                    <ListView x:Name="Merienda">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                              
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Button Text="+" Clicked="Añadirmerienda"></Button>
+                    <Label Text="Cena" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+                    <ListView x:Name="Cena">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Button Text="+" Clicked="Añadircena"></Button>
+                </StackLayout>
+            </ScrollView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

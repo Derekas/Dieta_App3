@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dietas_App.View.TiposDietas"
+             BackgroundColor="#B29E81"
+             >
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="10,10,10,10" HorizontalOptions="Center" BackgroundColor="Red">
+            <Label Text="Seleccione Dieta" TextColor="#9BFE9B" FontSize="40" HorizontalTextAlignment="Center" FontAttributes="Italic" FontFamily=""  Margin="20"></Label>
+            <StackLayout Spacing="10" Padding="60,60,60,60" BackgroundColor="Blue">
+            <Button Text="Dieta Hipocalorica" Clicked="IrHipocalorica" TextColor="White" FontSize="20" WidthRequest="500" BackgroundColor="Black" Margin="10"  CornerRadius="10"  HorizontalOptions="Center" VerticalOptions="Center" ></Button>
+            <Button Text="Dieta Musculo" Clicked="IrMusculo" TextColor="White" BackgroundColor="Black" WidthRequest="500" FontSize="20" Margin="10" CornerRadius="10"  HorizontalOptions="Center" VerticalOptions="Center"></Button>
+            <Button Text="Mantenerse en forma" Clicked="IrMantenerse" TextColor="White" BackgroundColor="Black" Margin="10" WidthRequest="500"  FontSize="20" CornerRadius="10"  HorizontalOptions="Center" VerticalOptions="Center"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
