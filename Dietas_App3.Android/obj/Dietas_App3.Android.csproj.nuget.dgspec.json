@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3.Android\\Dietas_App3.Android.csproj": {}
+    "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3.Android\\Dietas_App3.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3.Android\\Dietas_App3.Android.csproj": {
+    "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3.Android\\Dietas_App3.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3.Android\\Dietas_App3.Android.csproj",
+        "projectUniqueName": "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3.Android\\Dietas_App3.Android.csproj",
         "projectName": "Dietas_App3.Android",
-        "projectPath": "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3.Android\\Dietas_App3.Android.csproj",
-        "packagesPath": "C:\\Users\\Derek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3.Android\\obj\\",
+        "projectPath": "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3.Android\\Dietas_App3.Android.csproj",
+        "packagesPath": "C:\\Users\\isca\\.nuget\\packages\\",
+        "outputPath": "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Derek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\isca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -34,8 +34,8 @@
         "frameworks": {
           "monoandroid11.0": {
             "projectReferences": {
-              "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3\\Dietas_App3.csproj": {
-                "projectPath": "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3\\Dietas_App3.csproj"
+              "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3\\Dietas_App3.csproj": {
+                "projectPath": "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3\\Dietas_App3.csproj"
               }
             }
           }
@@ -56,21 +56,21 @@
         }
       }
     },
-    "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3\\Dietas_App3.csproj": {
+    "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3\\Dietas_App3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3\\Dietas_App3.csproj",
+        "projectUniqueName": "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3\\Dietas_App3.csproj",
         "projectName": "Dietas_App3",
-        "projectPath": "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3\\Dietas_App3.csproj",
-        "packagesPath": "C:\\Users\\Derek\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Derek\\Desktop\\Dietas_App3\\Dietas_App3\\obj\\",
+        "projectPath": "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3\\Dietas_App3.csproj",
+        "packagesPath": "C:\\Users\\isca\\.nuget\\packages\\",
+        "outputPath": "E:\\1.Clase\\2ºsuperior\\RobertProgramacio\\Dieta_App3\\Dietas_App3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Derek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\isca\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"

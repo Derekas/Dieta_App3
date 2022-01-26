@@ -11,8 +11,13 @@ namespace Dietas_App.Model
         static readonly Lazy<SQLiteAsyncConnection> lazyInitializer = new Lazy<SQLiteAsyncConnection>();
         static DataBase()
         {
+            /*ConnectionDatabase.DropTableAsync<Dieta>().Wait();
+            ConnectionDatabase.DropTableAsync<Comida>().Wait();
+            ConnectionDatabase.DropTableAsync<Categoria>().Wait();*/
+
             ConnectionDatabase.CreateTableAsync<Dieta>().Wait();
             ConnectionDatabase.CreateTableAsync<Comida>().Wait();
+            ConnectionDatabase.CreateTableAsync<Categoria>().Wait();
         }
     }
 }

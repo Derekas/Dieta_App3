@@ -12,6 +12,7 @@ namespace Dietas_App3
     {
         public MainPage()
         {
+
             InitializeComponent();
         }
     }
