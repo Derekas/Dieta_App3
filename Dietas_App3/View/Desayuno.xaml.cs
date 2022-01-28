@@ -1,4 +1,4 @@
-﻿using Dietas_App.ViewModel;
+﻿using Dietas_App3.ViewModel;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -8,19 +8,18 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Dietas_App.View
+namespace Dietas_App3.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Desayuno : ContentPage
     {
-        public ObservableCollection<string> Items { get; set; }
         private DesayunoVM dvm;
         public Desayuno()
         {
             InitializeComponent();
             dvm = new DesayunoVM();
             BindingContext = dvm;
-
+            
         }
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -36,6 +35,11 @@ namespace Dietas_App.View
         private void TappedDesayuno(object sender, ItemTappedEventArgs e)
         {
             
+        }
+        void OnBtnPressed(object sender, EventArgs ea)
+        {
+            var keyword = MainSearchBar.Text;
+            //ListaComidas.ItemsSource = dvm.Comidas.Where(nom => nom.Contains(keyword));
         }
     }
 }

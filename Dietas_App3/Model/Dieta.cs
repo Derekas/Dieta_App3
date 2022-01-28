@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dietas_App.Model
+namespace Dietas_App3.Model
 {
     [Table("Dieta")]
     public class Dieta

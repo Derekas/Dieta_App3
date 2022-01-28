@@ -8,13 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Dietas_App3.View.Desayuno.xaml", "View/Desayuno.xaml", typeof(global::Dietas_App.View.Desayuno))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Dietas_App3.View.Desayuno.xaml", "View/Desayuno.xaml", typeof(global::Dietas_App3.View.Desayuno))]
 
-namespace Dietas_App.View {
+namespace Dietas_App3.View {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Desayuno.xaml")]
     public partial class Desayuno : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.SearchBar MainSearchBar;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ListView ListaComidas;
@@ -22,6 +25,7 @@ namespace Dietas_App.View {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Desayuno));
+            MainSearchBar = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.SearchBar>(this, "MainSearchBar");
             ListaComidas = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "ListaComidas");
         }
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Dietas_App.View
+namespace Dietas_App3.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TiposDietas : ContentPage

@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dietas_App.View.Desayuno"
+             x:Class="Dietas_App3.View.Desayuno"
              BackgroundColor="#B29E81">
     <StackLayout>
         <Label Text="Alimentos Desayuno" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
 
-    
-  <ListView x:Name="ListaComidas"
+        <SearchBar x:Name="MainSearchBar" SearchButtonPressed="OnBtnPressed" />
+        <ListView x:Name="ListaComidas"
             ItemsSource="{Binding Comidas}"
             ItemTapped="TappedDesayuno"
-            CachingStrategy="RecycleElement">
+            >
     <!--Built in Cells-->
     <ListView.ItemTemplate>
         <DataTemplate>
-                    <Label Text="{Binding nom}"
-                   Style="{DynamicResource ListItemTextStyle}" TextColor="White" />
+                    <Label Text="{Binding Nom}" />
         </DataTemplate>
     </ListView.ItemTemplate>
     

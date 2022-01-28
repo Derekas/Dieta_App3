@@ -1,17 +1,30 @@
-﻿using SQLite;
+﻿using Dietas_App3.Utils;
+using SQLite;
 using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dietas_App.Model
+namespace Dietas_App3.Model
 {
     [Table("Comida")]
-    public class Comida
+    public class Comida: NotifyPropertyBase
     {
         [PrimaryKey]
         public int id { get; set; }
-        public String nom { get; set; }
+        private String _nom;
+        public String Nom
+        {
+            get
+            {
+                return _nom;
+            }
+            set
+            {
+                _nom = value;
+                OnPropertyChanged();
+            }
+        }
 
         public String cantidad { get; set; }
         public int calorias { get; set; }

@@ -1,9 +1,10 @@
-﻿using SQLite;
+﻿ using Dietas_App3.Model;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dietas_App.Model
+namespace Dietas_App3.Model
 {
     public class DataBase
     {
@@ -18,6 +19,7 @@ namespace Dietas_App.Model
             ConnectionDatabase.CreateTableAsync<Dieta>().Wait();
             ConnectionDatabase.CreateTableAsync<Comida>().Wait();
             ConnectionDatabase.CreateTableAsync<Categoria>().Wait();
+            ConnectionDatabase.CreateTableAsync<Usuario>().Wait();
         }
     }
 }

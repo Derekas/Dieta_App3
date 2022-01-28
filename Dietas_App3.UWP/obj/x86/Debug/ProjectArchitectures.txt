@@ -1,1 +1,1 @@
-E:\1.Clase\2ºsuperior\RobertProgramacio\Dieta_App3\Dietas_App3.UWP\Dietas_App3.UWP.csproj;x86
+C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3.UWP\Dietas_App3.UWP.csproj;x86

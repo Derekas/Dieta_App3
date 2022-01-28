@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Dietas_App3.View.LoadingView.xaml", "View/LoadingView.xaml", typeof(global::Dietas_App.View.LoadingView))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Dietas_App3.View.LoadingView.xaml", "View/LoadingView.xaml", typeof(global::Dietas_App3.View.LoadingView))]
 
-namespace Dietas_App.View {
+namespace Dietas_App3.View {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\LoadingView.xaml")]

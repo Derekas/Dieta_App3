@@ -1,5 +1,5 @@
-﻿using Dietas_App.Model;
-using Dietas_App.View;
+﻿using Dietas_App3.Model;
+using Dietas_App3.View;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;

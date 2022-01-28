@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Dietas_App.View
+namespace Dietas_App3.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LoadingView : ContentPage
@@ -16,7 +16,7 @@ namespace Dietas_App.View
         float progressmax = 1;
         bool istimerRunning = true;
         float progress = 0;
-        int counter = 1;
+        
         public LoadingView()
         {
             

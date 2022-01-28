@@ -2,7 +2,7 @@
 using SQLiteNetExtensions.Attributes;
 using System.Collections.Generic;
 
-namespace Dietas_App.Model
+namespace Dietas_App3.Model
 {
     [Table("Categoria")]
     public class Categoria
