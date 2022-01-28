@@ -17,7 +17,7 @@ namespace Dietas_App3.ViewModel
         {
             Task<List<Comida>> t = ComidaDAO.GetAllAsync();
             List<Comida> ll = t.Result;
-            Comidas = new ObservableCollection<Comida>(ll);
+            Comidas = new ObservableCollection<Comida>(t.Result);
             OnPropertyChanged("Comidas");
         }
     }

@@ -14,7 +14,28 @@
     <!--Built in Cells-->
     <ListView.ItemTemplate>
         <DataTemplate>
-                    <Label Text="{Binding Nom}" />
+                    <ViewCell>
+
+
+                        <Grid>
+
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                                
+
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Nom}" Grid.Row="0" Grid.Column="0" TextColor="White"/>
+                        </Grid>
+
+
+
+                    </ViewCell>
+                    
         </DataTemplate>
     </ListView.ItemTemplate>
     

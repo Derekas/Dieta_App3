@@ -22,7 +22,8 @@ namespace Dietas_App3.View
             
         }
 
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        
+        async void TappedDesayuno(object sender, ItemTappedEventArgs e)
         {
             if (e.Item == null)
                 return;
@@ -31,10 +32,6 @@ namespace Dietas_App3.View
 
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
-        }
-        private void TappedDesayuno(object sender, ItemTappedEventArgs e)
-        {
-            
         }
         void OnBtnPressed(object sender, EventArgs ea)
         {
