@@ -13,6 +13,7 @@ namespace Dietas_App3.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Desayuno : ContentPage
     {
+        String nom;
         private DesayunoVM dvm;
         public Desayuno()
         {
@@ -33,10 +34,32 @@ namespace Dietas_App3.View
             //Deselect Item
             ((ListView)sender).SelectedItem = null;
         }
-        void OnBtnPressed(object sender, EventArgs ea)
+        void OnBtnPressed(object sender, TextChangedEventArgs e)
         {
-            var keyword = MainSearchBar.Text;
-            //ListaComidas.ItemsSource = dvm.Comidas.Where(nom => nom.Contains(keyword));
+            
+            
+            if (string.IsNullOrEmpty(e.NewTextValue))
+            {
+                ListaComidas.ItemsSource = dvm.Comidas;
+            }
+
+            else
+            {
+                ListaComidas.ItemsSource = dvm.Comidas.Where(x => x.Nom.StartsWith(e.NewTextValue));
+            }
+        }
+
+        private void MainSearchBar(object sender, TextChangedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(e.NewTextValue))
+            {
+                ListaComidas.ItemsSource = dvm.Comidas;
+            }
+
+            else
+            {
+                ListaComidas.ItemsSource = dvm.Comidas.Where(x => x.categoria.StartsWith(e.NewTextValue));
+            }
         }
     }
 }

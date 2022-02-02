@@ -4,9 +4,9 @@
              x:Class="Dietas_App3.View.Desayuno"
              BackgroundColor="#B29E81">
     <StackLayout>
-        <Label Text="Alimentos Desayuno" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+        <Label Text="Seleccione Alimento" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
 
-        <SearchBar x:Name="MainSearchBar" SearchButtonPressed="OnBtnPressed" />
+        <SearchBar TextChanged="MainSearchBar" />
         <ListView x:Name="ListaComidas"
             ItemsSource="{Binding Comidas}"
             ItemTapped="TappedDesayuno"
@@ -27,9 +27,11 @@
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
                                 
                             </Grid.ColumnDefinitions>
                             <Label Text="{Binding Nom}" Grid.Row="0" Grid.Column="0" TextColor="White"/>
+                            <Label Text="{Binding categoria}" Grid.Row="0" Grid.Column="1" TextColor="White"/>
                         </Grid>
 
 

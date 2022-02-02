@@ -12,6 +12,7 @@ namespace Dietas_App3.ViewModel
     public class DesayunoVM: NotifyPropertyBase
     {
         public ObservableCollection<Comida> Comidas { get; set; }
+        
 
         public DesayunoVM()
         {

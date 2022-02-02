@@ -18,7 +18,7 @@ namespace Dietas_App3.Model
 
             ConnectionDatabase.CreateTableAsync<Dieta>().Wait();
             ConnectionDatabase.CreateTableAsync<Comida>().Wait();
-            ConnectionDatabase.CreateTableAsync<Categoria>().Wait();
+            //ConnectionDatabase.CreateTableAsync<Categoria>().Wait();
             ConnectionDatabase.CreateTableAsync<Usuario>().Wait();
         }
     }

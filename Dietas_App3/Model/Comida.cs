@@ -34,8 +34,6 @@ namespace Dietas_App3.Model
 
         [ForeignKey(typeof(Dieta))]
         public int dieta_id { get; set; }
-
-        [ForeignKey(typeof(Categoria))]
-        public int categoria_id { get; set; }
+        public String categoria { get; set; }
     }
 }
