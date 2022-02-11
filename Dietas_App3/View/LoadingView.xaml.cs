@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dietas_App3.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace Dietas_App3.View
         float progressmax = 1;
         bool istimerRunning = true;
         float progress = 0;
-        
+        Usuario usu;
         public LoadingView()
         {
             

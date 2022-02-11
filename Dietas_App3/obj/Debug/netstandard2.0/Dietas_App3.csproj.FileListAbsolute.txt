@@ -57,7 +57,6 @@ C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\View\Cena.xaml.g.cs
-C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\View\Comida.xaml.g.cs
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\View\Desayuno.xaml.g.cs
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\View\HipocaloricaView.xaml.g.cs
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\View\LoadingView.xaml.g.cs
@@ -73,3 +72,4 @@ C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\Dietas_App3.dll
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\ref\Dietas_App3.dll
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\Dietas_App3.pdb
+C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\View\ComidaView.xaml.g.cs

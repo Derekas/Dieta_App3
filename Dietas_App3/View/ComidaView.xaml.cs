@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Dietas_App3.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Comida : ContentPage
+    public partial class ComidaView : ContentPage
     {
         public ObservableCollection<string> Items { get; set; }
 
-        public Comida()
+        public ComidaView()
         {
             InitializeComponent();
 

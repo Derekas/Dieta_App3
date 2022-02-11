@@ -15,8 +15,8 @@
 
 
                 <Label Text="Peso"></Label>
-                    
-                <Slider x:Name="MainSlider" Minimum="0" Maximum="150"
+
+                <Slider Value="{Binding Usuario.peso}" x:Name="MainSlider" Minimum="0" Maximum="150"
                 ValueChanged="OnSliderValueChangedPeso" ThumbColor="Black"/>
                 <Label x:Name="displayLabel"
                     
@@ -24,27 +24,27 @@
                     VerticalOptions="CenterAndExpand" />
 
                  <Label Text="Edad"></Label>
-                 <Entry Text="{Binding edad}"></Entry>
+                 <Entry Text="{Binding Usuario.edad} " x:Name="edadvalue"></Entry>
 
-                 <Label Text="Altura"></Label>
-                <Slider x:Name="AlturaSlider" Minimum="0" Maximum="230"
-                ValueChanged="OnSliderValueChangedAltura" ThumbColor="Black" />
+                <Label Text="Altura"></Label>
+                <Slider Value="{Binding Usuario.altura}" x:Name="AlturaSlider" Minimum="0" Maximum="230"
+                ValueChanged="OnSliderValueChangedAltura" ThumbColor="Black"  />
                 <Label x:Name="altura"
                     
                     HorizontalOptions="Center"
                     VerticalOptions="CenterAndExpand" />
 
 
-                <StackLayout Orientation="Horizontal">
+                <StackLayout RadioButtonGroup.SelectedValue="{Binding Usuario.sexo}" Orientation="Horizontal">
                     <Label Text="Sexo :"  />
-                    <RadioButton Content="Masculino" IsChecked="True" HorizontalOptions="CenterAndExpand"/>
-                    <RadioButton Content="Femenino" HorizontalOptions="Center" />
+                    <RadioButton x:Name="Masculino" Content="Masculino" Value="Masculino" IsChecked="True" HorizontalOptions="CenterAndExpand"/>
+                    <RadioButton x:Name="Femenino" Content="Femenino" Value="Femenino" HorizontalOptions="Center" />
                  
                 </StackLayout>
-                    
-                
 
-                <Picker Title="Actividad" x:Name="Actividad">
+
+
+                <Picker Title="Actividad" x:Name="Actividad" SelectedItem="{Binding Usuario.actividad}">
                     <Picker.Items>
                         <x:String>Sedentario</x:String>
                         <x:String>Poca Actividad</x:String>
@@ -53,7 +53,7 @@
                         <x:String>Profesional</x:String>
                     </Picker.Items>
                 </Picker>
-
+                <Button Text="Añadir Datos" Clicked="Adddatos"></Button>
                 <Button Text="Siguiente" Clicked="IrTipos"></Button>
 
                 </StackLayout>

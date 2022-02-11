@@ -3,6 +3,7 @@ using SQLite;
 using SQLiteNetExtensions.Attributes;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace Dietas_App3.Model
@@ -35,5 +36,8 @@ namespace Dietas_App3.Model
         [ForeignKey(typeof(Dieta))]
         public int dieta_id { get; set; }
         public String categoria { get; set; }
+        [Ignore]
+        public ObservableCollection<Comida> Desayuno { get; set; }
+        
     }
 }

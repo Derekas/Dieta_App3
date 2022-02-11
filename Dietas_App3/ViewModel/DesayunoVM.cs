@@ -11,9 +11,10 @@ namespace Dietas_App3.ViewModel
     
     public class DesayunoVM: NotifyPropertyBase
     {
-        public ObservableCollection<Comida> Comidas { get; set; }
         
+        public ObservableCollection<Comida> Comidas { get; set; }
 
+        
         public DesayunoVM()
         {
             Task<List<Comida>> t = ComidaDAO.GetAllAsync();
@@ -21,5 +22,9 @@ namespace Dietas_App3.ViewModel
             Comidas = new ObservableCollection<Comida>(t.Result);
             OnPropertyChanged("Comidas");
         }
+        
+        
+
+
     }
 }

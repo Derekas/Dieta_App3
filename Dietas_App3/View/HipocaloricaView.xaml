@@ -30,14 +30,43 @@
             <ScrollView>
                 <StackLayout>
                     <Label Text="Desayuno" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
-                        
-                    <Button Text="+" Clicked="Añadirdesayuno"></Button>
+                        <ListView ItemsSource="{Binding Desayunos}" CachingStrategy="RecycleElement">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"></RowDefinition>
+
+
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                                </Grid.ColumnDefinitions>
+                                                <Label Text="{Binding Nom}" Grid.Column="0" Grid.Row="0">
+                                                    
+                                                </Label>
+                                                <Button Text="-" CommandParameter="{Binding .}" Grid.Column="1" Grid.Row="0"></Button>
+
+                                            </Grid>
+                                        </StackLayout>
+                                    </ViewCell>
+
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <Button Text="+" Clicked="Añadirdesayuno"></Button>
                         <StackLayout>
+                            <StackLayout>
                     <Label Text="Comida" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
                     <ListView x:Name="Comida">
                             
                         </ListView>
-                    <Button Text="+" Clicked="Añadircomida"></Button>
+                            </StackLayout>
+                            <Button Text="+" Clicked="Añadircomida"></Button>
                         </StackLayout>
                         <Label Text="Merienda" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
                     <ListView x:Name="Merienda">
