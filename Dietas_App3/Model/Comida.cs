@@ -9,7 +9,7 @@ using System.Text;
 namespace Dietas_App3.Model
 {
     [Table("Comida")]
-    public class Comida: NotifyPropertyBase
+    public class Comida : NotifyPropertyBase
     {
         [PrimaryKey]
         public int id { get; set; }
@@ -28,16 +28,19 @@ namespace Dietas_App3.Model
         }
 
         public String cantidad { get; set; }
-        public int calorias { get; set; }
-        public int hidratos { get; set; }
-        public int proteina { get; set; }
-        public int grasas { get; set; }
+        public double calorias { get; set; }
+        public double hidratos { get; set; }
+        public double proteina { get; set; }
+        public double grasas { get; set; }
 
-        [ForeignKey(typeof(Dieta))]
-        public int dieta_id { get; set; }
+        public int diaSemana { get; set; }
+        [ManyToMany(typeof(DietasComidas))]
+        public List<Dieta> dietas { get; set; }
+
         public String categoria { get; set; }
         [Ignore]
         public ObservableCollection<Comida> Desayuno { get; set; }
-        
+
     }
+
 }

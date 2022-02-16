@@ -12,12 +12,14 @@ namespace Dietas_App3.Model
         [PrimaryKey]
         public int id { get; set; }
         public String nom { get; set; }
-        public int calorias_Limite { get; set; }
-        public int hidratos_Limite { get; set; }
-        public int proteina_Limite { get; set; }
-        public int grasas_Limite { get; set; }
+        public double calorias_Limite { get; set; }
+        public double hidratos_Limite { get; set; }
+        public double proteina_Limite { get; set; }
+        public double grasas_Limite { get; set; }
 
-        [OneToMany(CascadeOperations = CascadeOperation.All)]
+        [ManyToMany(typeof(DietasComidas))]
         public List<Comida> comidas { get; set; }
+
     }
+
 }
