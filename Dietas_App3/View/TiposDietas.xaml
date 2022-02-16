@@ -12,6 +12,44 @@
             <Button Text="Dieta Musculo" Clicked="IrMusculo" TextColor="White" WidthRequest="500" FontSize="20" Margin="10" CornerRadius="10"  HorizontalOptions="Center" VerticalOptions="Center"></Button>
             <Button Text="Mantenerse en forma" Clicked="IrMantenerse" TextColor="White" Margin="10" WidthRequest="500"  FontSize="20" CornerRadius="10"  HorizontalOptions="Center" VerticalOptions="Center"></Button>
             </StackLayout>
-        </StackLayout>
+            <StackLayout>
+                <StackLayout>
+
+                    <Label Text="Almuerzo" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+                    <ListView ItemsSource="{Binding Usuarios}" CachingStrategy="RecycleElement">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"></RowDefinition>
+
+
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding peso}" Grid.Column="0" Grid.Row="0" TextColor="White">
+
+                                            </Label>
+
+                                        </Grid>
+                                    </StackLayout>
+                                </ViewCell>
+
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+            </StackLayout>
+
+        
+        
+    
     </ContentPage.Content>
+    
 </ContentPage>

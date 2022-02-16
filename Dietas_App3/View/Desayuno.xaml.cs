@@ -1,4 +1,5 @@
-﻿using Dietas_App3.Model;
+﻿using Dietas_App3.Helpers;
+using Dietas_App3.Model;
 using Dietas_App3.ViewModel;
 using System;
 using System.Collections.ObjectModel;
@@ -17,17 +18,18 @@ namespace Dietas_App3.View
         String nom;
         private Comida comseleccionat;
         private DesayunoVM dvm;
-        private HipocaloricaVM hvm;
+        
         public Desayuno()
         {
             InitializeComponent();
             dvm = new DesayunoVM();
-            hvm = new HipocaloricaVM();
+            
             BindingContext = dvm;
             
         }
+        public InformacionEvents<ComidaEventArgs> comEvents = new InformacionEvents<ComidaEventArgs>();
 
-        
+
         void TappedDesayuno(object sender, ItemTappedEventArgs e)
         {
             comseleccionat = (Comida)((ListView)sender).SelectedItem;
@@ -38,8 +40,10 @@ namespace Dietas_App3.View
             else
             {
                 HipocaloricaView v = new HipocaloricaView();
-
-                hvm.AddDesayuno(comseleccionat);
+                ComidaEventArgs com = new ComidaEventArgs(comseleccionat);
+                comEvents.TriggerHandlerAdd(com);
+                
+                
 
                 Navigation.PopAsync();
             }
@@ -73,9 +77,6 @@ namespace Dietas_App3.View
                 ListaComidas.ItemsSource = dvm.Comidas.Where(x => x.categoria.StartsWith(e.NewTextValue));
             }
         }
-        public void OnAddDesayuno(object sender, EventArgs e)
-        {
-            hvm.AddDesayuno(comseleccionat);
-        }
+        
     }
 }

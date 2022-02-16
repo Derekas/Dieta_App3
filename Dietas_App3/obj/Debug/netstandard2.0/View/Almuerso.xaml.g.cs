@@ -8,20 +8,20 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Dietas_App3.View.Merienda.xaml", "View/Merienda.xaml", typeof(global::Dietas_App3.View.Merienda))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Dietas_App3.View.Almuerso.xaml", "View/Almuerso.xaml", typeof(global::Dietas_App3.View.Almuerso))]
 
 namespace Dietas_App3.View {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Merienda.xaml")]
-    public partial class Merienda : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("View\\Almuerso.xaml")]
+    public partial class Almuerso : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.ListView ListaComidas;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Merienda));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Almuerso));
             ListaComidas = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "ListaComidas");
         }
     }

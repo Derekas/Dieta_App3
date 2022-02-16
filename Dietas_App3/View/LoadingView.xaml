@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Dietas_App3.View.LoadingView"
-             BackgroundImageSource="azul-color.png">
+             BackgroundColor="#B29E81">
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center" Padding="50,50,50,50" >
             <Image Source="colores.jpg" HeightRequest="200" WidthRequest="200"/>

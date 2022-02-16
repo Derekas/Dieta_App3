@@ -5,16 +5,40 @@
              BackgroundColor="#B29E81">
 
     <StackLayout>
-        <Label Text="Alimentos Cena" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+        <Label Text="Seleccione Comida" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
 
-        <ListView x:Name="MyListView"
-            ItemsSource="{Binding Items}"
-            ItemTapped="Handle_ItemTapped"
-            CachingStrategy="RecycleElement">
+        <SearchBar TextChanged="MainSearchBar" />
+        <ListView x:Name="ListaComidas"
+            ItemsSource="{Binding Comidas}"
+            ItemTapped="TappeCena"
+            >
             <!--Built in Cells-->
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding .}" TextColor="White" />
+                    <ViewCell>
+
+
+                        <Grid>
+
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+
+
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding Nom}" Grid.Row="0" Grid.Column="0" TextColor="White"/>
+                            <Label Text="{Binding categoria}" Grid.Row="0" Grid.Column="1" TextColor="White"/>
+                        </Grid>
+
+
+
+                    </ViewCell>
+
                 </DataTemplate>
             </ListView.ItemTemplate>
 
@@ -34,5 +58,6 @@
     </ListView.ItemTemplate>
     -->
         </ListView>
+
     </StackLayout>
 </ContentPage>

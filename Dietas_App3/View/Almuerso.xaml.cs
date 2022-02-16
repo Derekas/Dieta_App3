@@ -13,27 +13,38 @@ using Xamarin.Forms.Xaml;
 namespace Dietas_App3.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Cena : ContentPage
+    public partial class Almuerso : ContentPage
     {
-        String nom;
+        
+
         private Comida comseleccionat;
-        private CenaVM cevm;
-        public Cena()
+        private AlmuVM alvm;
+        public Almuerso()
         {
             InitializeComponent();
-            cevm = new CenaVM();
+            alvm = new AlmuVM();
 
-            BindingContext = cevm;
+            BindingContext = alvm;
+
+        }
+        public InformacionEvents<ComidaEventArgs> comEvents = new InformacionEvents<ComidaEventArgs>();
+        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            if (e.Item == null)
+                return;
+
+            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+
+            //Deselect Item
+            ((ListView)sender).SelectedItem = null;
         }
 
-        public InformacionEvents<ComidaEventArgs> comEvents = new InformacionEvents<ComidaEventArgs>();
-
-        private void TappeCena(object sender, ItemTappedEventArgs e)
+        private void TappeAl(object sender, ItemTappedEventArgs e)
         {
             comseleccionat = (Comida)((ListView)sender).SelectedItem;
-            if (!comseleccionat.categoria.Equals("Cena"))
+            if (!comseleccionat.categoria.Equals("Almuerzo"))
             {
-                DisplayAlert("Item Tapped", "Porfavor seleccione una cena para añadirla.", "OK");
+                DisplayAlert("Item Tapped", "Porfavor seleccione un almuerzo para añadirla.", "OK");
             }
             else
             {
@@ -46,16 +57,17 @@ namespace Dietas_App3.View
                 Navigation.PopAsync();
             }
         }
+
         private void MainSearchBar(object sender, TextChangedEventArgs e)
         {
             if (string.IsNullOrEmpty(e.NewTextValue))
             {
-                ListaComidas.ItemsSource = cevm.Comidas;
+                ListaComidas.ItemsSource = alvm.Comidas;
             }
 
             else
             {
-                ListaComidas.ItemsSource = cevm.Comidas.Where(x => x.categoria.StartsWith(e.NewTextValue));
+                ListaComidas.ItemsSource = alvm.Comidas.Where(x => x.categoria.StartsWith(e.NewTextValue));
             }
         }
     }

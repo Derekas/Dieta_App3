@@ -100,6 +100,9 @@
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3.UWP\Assets\papelera-de-reciclaje.png">
+      <PackagePath>Assets\papelera-de-reciclaje.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

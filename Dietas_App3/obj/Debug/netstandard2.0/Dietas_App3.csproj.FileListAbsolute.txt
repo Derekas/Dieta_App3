@@ -73,3 +73,4 @@ C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\ref\Dietas_App3.dll
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\Dietas_App3.pdb
 C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\View\ComidaView.xaml.g.cs
+C:\Users\Derek\Desktop\Dietas_App3\Dieta_App3\Dietas_App3\obj\Debug\netstandard2.0\View\Almuerso.xaml.g.cs

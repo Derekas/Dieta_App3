@@ -22,10 +22,12 @@ namespace Dietas_App3.View
         static double kg,cm;
         private PaginaPrincipalVM ppvm;
         
+
         public PaginaPrincipal()
         {
             InitializeComponent();
             ppvm = new PaginaPrincipalVM();
+            
             BindingContext = ppvm;
         }
         public InformacionEvents<UsuarioEventArgs> events = new InformacionEvents<UsuarioEventArgs>();
@@ -55,6 +57,7 @@ namespace Dietas_App3.View
         private void Adddatos(object sender, EventArgs e)
         {
 
+            
             Boolean esnuevo = ppvm.AñadirUsuario();
             if (esnuevo)
             {

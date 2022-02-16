@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Dietas_App3.View.Merienda"
+             x:Class="Dietas_App3.View.Almuerso"
              BackgroundColor="#B29E81">
     <StackLayout>
-        <Label Text="Seleccione Alimento" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+        <Label Text="Seleccione Comida" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
 
         <SearchBar TextChanged="MainSearchBar" />
         <ListView x:Name="ListaComidas"
             ItemsSource="{Binding Comidas}"
-            ItemTapped="TappedMerienda"
+            ItemTapped="TappeAl"
             >
             <!--Built in Cells-->
             <ListView.ItemTemplate>

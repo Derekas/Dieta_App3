@@ -46,10 +46,10 @@
                                                     <ColumnDefinition Width="*"></ColumnDefinition>
 
                                                 </Grid.ColumnDefinitions>
-                                                <Label Text="{Binding Nom}" Grid.Column="0" Grid.Row="0">
+                                                <Label Text="{Binding Nom}" HorizontalTextAlignment="Center" Grid.Column="0" Grid.Row="0" TextColor="White">
                                                     
                                                 </Label>
-                                                <Button Text="-" CommandParameter="{Binding .}" Grid.Column="1" Grid.Row="0"></Button>
+                                                <Button Text="-" TextColor="White" Clicked="Deldesayuno" CommandParameter="{Binding .}" Grid.Column="1" Grid.Row="0"></Button>
 
                                             </Grid>
                                         </StackLayout>
@@ -61,32 +61,134 @@
                         <Button Text="+" Clicked="Añadirdesayuno"></Button>
                         <StackLayout>
                             <StackLayout>
+
+                                <Label Text="Almuerzo" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
+                                <ListView ItemsSource="{Binding Almuerso}" CachingStrategy="RecycleElement">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <StackLayout>
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*"></RowDefinition>
+
+
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                                            <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                                        </Grid.ColumnDefinitions>
+                                                        <Label Text="{Binding Nom}" Grid.Column="0" Grid.Row="0" TextColor="White">
+
+                                                        </Label>
+                                                        <Button Text="-" Clicked="Delalmuerso" CommandParameter="{Binding .}" Grid.Column="1" Grid.Row="0"></Button>
+
+                                                    </Grid>
+                                                </StackLayout>
+                                            </ViewCell>
+
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </StackLayout>
+                            <Button Text="+" Clicked="Añadiralmuerso"></Button>
+                        </StackLayout>
+                        <StackLayout>
+                            <StackLayout>
+                                
                     <Label Text="Comida" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
-                    <ListView x:Name="Comida">
-                            
-                        </ListView>
+                                <ListView ItemsSource="{Binding Comidas}" CachingStrategy="RecycleElement">
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <StackLayout>
+                                                    <Grid>
+                                                        <Grid.RowDefinitions>
+                                                            <RowDefinition Height="*"></RowDefinition>
+
+
+                                                        </Grid.RowDefinitions>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"></ColumnDefinition>
+                                                            <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                                        </Grid.ColumnDefinitions>
+                                                        <Label Text="{Binding Nom}" Grid.Column="0" Grid.Row="0" TextColor="White">
+
+                                                        </Label>
+                                                        <Button Text="-" Clicked="Delcomida" CommandParameter="{Binding .}" Grid.Column="1" Grid.Row="0"></Button>
+
+                                                    </Grid>
+                                                </StackLayout>
+                                            </ViewCell>
+
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
                             </StackLayout>
                             <Button Text="+" Clicked="Añadircomida"></Button>
                         </StackLayout>
                         <Label Text="Merienda" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
-                    <ListView x:Name="Merienda">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                              
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                    <Button Text="+" Clicked="Añadirmerienda"></Button>
+                        <ListView ItemsSource="{Binding Meriendas}" CachingStrategy="RecycleElement">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"></RowDefinition>
+
+
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                                </Grid.ColumnDefinitions>
+                                                <Label Text="{Binding Nom}" Grid.Column="0" Grid.Row="0" TextColor="White">
+
+                                                </Label>
+                                                <Button Text="-" Clicked="Delmerienda" CommandParameter="{Binding .}" Grid.Column="1" Grid.Row="0"></Button>
+
+                                            </Grid>
+                                        </StackLayout>
+                                    </ViewCell>
+
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <Button Text="+" Clicked="Añadirmerienda"></Button>
                     <Label Text="Cena" TextColor="#9BFE9B" FontSize="20" HorizontalTextAlignment="Center" Margin="10" FontAttributes="Italic" FontFamily=""></Label>
-                    <ListView x:Name="Cena">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                    <Button Text="+" Clicked="Añadircena"></Button>
+                        <ListView ItemsSource="{Binding Cenas}" CachingStrategy="RecycleElement">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"></RowDefinition>
+
+
+                                                </Grid.RowDefinitions>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                                                </Grid.ColumnDefinitions>
+                                                <Label Text="{Binding Nom}" Grid.Column="0" Grid.Row="0" TextColor="White">
+
+                                                </Label>
+                                                <Button Text="-" Clicked="Delcena" CommandParameter="{Binding .}" Grid.Column="1" Grid.Row="0"></Button>
+
+                                            </Grid>
+                                        </StackLayout>
+                                    </ViewCell>
+
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <Button Text="+" Clicked="Añadircena"></Button>
                 </StackLayout>
             </ScrollView>
             </StackLayout>

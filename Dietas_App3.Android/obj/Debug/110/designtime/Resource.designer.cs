@@ -11779,13 +11779,16 @@ namespace Dietas_App3.Droid
 			public const int notify_panel_notification_icon_bg = 2131165318;
 			
 			// aapt resource value: 0x7F070087
-			public const int test_custom_background = 2131165319;
+			public const int pape = 2131165319;
 			
 			// aapt resource value: 0x7F070088
-			public const int tooltip_frame_dark = 2131165320;
+			public const int test_custom_background = 2131165320;
 			
 			// aapt resource value: 0x7F070089
-			public const int tooltip_frame_light = 2131165321;
+			public const int tooltip_frame_dark = 2131165321;
+			
+			// aapt resource value: 0x7F07008A
+			public const int tooltip_frame_light = 2131165322;
 			
 			static Drawable()
 			{

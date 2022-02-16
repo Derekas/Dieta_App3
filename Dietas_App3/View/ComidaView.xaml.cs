@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Dietas_App3.Helpers;
+using Dietas_App3.Model;
+using Dietas_App3.ViewModel;
+using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -12,33 +15,50 @@ namespace Dietas_App3.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ComidaView : ContentPage
     {
-        public ObservableCollection<string> Items { get; set; }
+        String nom;
+        private Comida comseleccionat;
+        private ComidasVM cvm;
 
         public ComidaView()
         {
             InitializeComponent();
+            cvm = new ComidasVM();
 
-            Items = new ObservableCollection<string>
-            {
-                "Item 1",
-                "Item 2",
-                "Item 3",
-                "Item 4",
-                "Item 5"
-            };
-
-            MyListView.ItemsSource = Items;
+            BindingContext = cvm;
         }
 
-        async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
+        
+        private void MainSearchBar(object sender, TextChangedEventArgs e)
         {
-            if (e.Item == null)
-                return;
+            if (string.IsNullOrEmpty(e.NewTextValue))
+            {
+                ListaComidas.ItemsSource = cvm.Comidas;
+            }
 
-            await DisplayAlert("Item Tapped", "An item was tapped.", "OK");
+            else
+            {
+                ListaComidas.ItemsSource = cvm.Comidas.Where(x => x.categoria.StartsWith(e.NewTextValue));
+            }
+        }
+        public InformacionEvents<ComidaEventArgs> comEvents = new InformacionEvents<ComidaEventArgs>();
 
-            //Deselect Item
-            ((ListView)sender).SelectedItem = null;
+        private void TappeComida(object sender, ItemTappedEventArgs e)
+        {
+            comseleccionat = (Comida)((ListView)sender).SelectedItem;
+            if (!comseleccionat.categoria.Equals("Comida"))
+            {
+                DisplayAlert("Item Tapped", "Porfavor seleccione una comida para añadirlo.", "OK");
+            }
+            else
+            {
+                HipocaloricaView v = new HipocaloricaView();
+                ComidaEventArgs com = new ComidaEventArgs(comseleccionat);
+                comEvents.TriggerHandlerAdd(com);
+
+
+
+                Navigation.PopAsync();
+            }
         }
     }
 }

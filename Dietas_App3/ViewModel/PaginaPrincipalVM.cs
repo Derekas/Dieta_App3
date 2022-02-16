@@ -15,6 +15,7 @@ namespace Dietas_App3.ViewModel
         private Boolean NuevoUsuario = true;
         public PaginaPrincipalVM()
         {
+            //cogemos los datos de los usuarios desde usuario dao
             Task<List<Usuario>> u = UsuarioDAO.GetAllAsync();
             List<Usuario> ll = u.Result;
             if (ll.Count > 0)
@@ -28,6 +29,7 @@ namespace Dietas_App3.ViewModel
             }
             
         }
+        //si no hay ningun usuario lo añade y si existe lo modifica
         internal Boolean AñadirUsuario()
         {
             if (NuevoUsuario)
@@ -43,6 +45,7 @@ namespace Dietas_App3.ViewModel
             }
 
         }
+        //añade un nuevo usuario
         internal void AñadirNuevoUsuario()
         {
             Usuario = new Usuario();

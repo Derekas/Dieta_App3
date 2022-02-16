@@ -8,14 +8,13 @@ using System.Threading.Tasks;
 
 namespace Dietas_App3.ViewModel
 {
-    
-    public class DesayunoVM: NotifyPropertyBase
+    public class AlmuVM : NotifyPropertyBase
     {
         public Comida Comida { get; set; }
         public ObservableCollection<Comida> Comidas { get; set; }
 
-        
-        public DesayunoVM()
+
+        public AlmuVM()
         {
             //cogemos todas las comidas y las añadimos a la lista Comidas
             Task<List<Comida>> t = ComidaDAO.GetAllAsync();
@@ -25,9 +24,5 @@ namespace Dietas_App3.ViewModel
 
 
         }
-
-
-
-
     }
 }
